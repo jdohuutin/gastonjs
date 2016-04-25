@@ -608,7 +608,7 @@ Poltergeist.Browser = (function () {
 
     //Lets search the handle by the given window name
     var filteredPages = this.pages.filter(function (p) {
-      return !p.closed && p.windowName() === name;
+      return !p.closed && p.handle === name;
     });
 
     //A bit of error control is always good
